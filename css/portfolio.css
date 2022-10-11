@@ -1,4 +1,4 @@
-.filters-list {
+.filters__list {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
@@ -35,7 +35,7 @@
   min-width: 73px;
 }
 
-.filters-list__btn-web {
+.filters-list__-btn-web {
   min-width: 125px;
 }
 
@@ -51,7 +51,7 @@
   min-width: 130px;
 }
 
-.projects-list {
+.projects__list {
   display: flex;
   flex-wrap: wrap;
 }
