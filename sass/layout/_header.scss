@@ -1,5 +1,27 @@
   
-  
+  .nav-list {
+    display: none;
+  }
+  .contacts-list {
+    display: none;
+  }
+  .header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+  .logo_theme_wight {
+    color: var(--primary-text-color-theme-light);
+  }
+  .mobile-menu-btn {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+  }
   /* .header {
     border-bottom: 1px solid #eeeeee;
   }
