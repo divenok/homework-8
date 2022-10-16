@@ -29,8 +29,7 @@
   }
   .mobile-menu__container {
     position: relative;
-    padding-top: 48px;
-    padding-bottom: 48px;
+    padding: 48px 40px;
   }
   .mobile-menu-btn {
     background-color: transparent;
@@ -70,9 +69,104 @@
     fill: var(--primary-text-color-theme-light);
   }
 }
+.mobile-menu-list__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+.mobile-menu-list__link {
+  position: relative;
+  font-weight: var(--primary-font-weight);
+  font-size: 40px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+
+  color: var(--primary-text-color-theme-light);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    
+    margin-left: auto;
+    margin-right: auto;
+  
+    height: 4px;
+    border-radius: 2px;
+    
+    opacity: 0;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+    background-color: var(--accent-color);
+  }
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    &::after,
+    &::after {
+      opacity: 1;
+    }
+  }
+}
+.mobile-contacts-list__item-tel {
+  margin-bottom: 32px;
+  
+  
+  font-weight: var(--primary-font-weight);
+  font-size: 34px;
+  line-height: 1.18;
+
+  letter-spacing: 0.02em;
+
+  color: var(--accent-color);
+
+
+ 
+
+
+}
+.mobile-contacts-list__item-mail {
+  
+  font-weight: var(--primary-font-weight);
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  
+  color: rgba(117, 117, 117, 1);
+}
+.mobile-social-list {
+  display: flex;
+  justify-content: flex-start;
+ 
+}
+.mobile-contacts-list_item-mail {
+margin-bottom: 64px;
+}
+.mobile-contacts-list {
+  margin-top: 302px;
+  margin-bottom: 64px;
+}
+.mobile-social-list__link::after {
+  content: "";
+  width: 22px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  transform: rotate(90deg);
+  margin-left: 10px;
+  margin-right: 10px;
+  }
+.mobile-social-list__link {
+
+font-weight: var(--primary-font-weight);
+font-size: 18px;
+line-height: 1.22;
+
+letter-spacing: 0.02em;
+
+color: #2196F3;
+}
 /* tablet */
 
-@media  screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .mobile-menu-btn {
     display: none;
   }
