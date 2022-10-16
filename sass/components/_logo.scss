@@ -11,7 +11,10 @@
   .logo_theme_wight {
     color: var(--primary-text-color-theme-light);
   }
-  @media screen and (min-width: 1064px) {
+  .logo_theme_dark {
+    color: var(--primary-text-color-theme-dark);
+  }
+  @media screen and (min-width: 1200px) {
     .logo {
         font-family: var(--secondary-font-family);
         font-weight: var(--secondary-font-weight);
