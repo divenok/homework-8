@@ -8,27 +8,46 @@
   margin: 0px auto;
   text-align: center;
 
-  background-image: linear-gradient(
-    rgba(47, 48, 58, 0.4),
-    rgba(47, 48, 58, 0.4)
-  ),
-  url(../img/hero/mobile.jpg);
+  background-image: 
+  url(../../img/hero/mobile.jpg);
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-resolution: 2dppx) {
   .hero {
     background-image:
-    url(../img/hero/mobile2x.jpg);
-  } 
+    url(../../img/hero/mobile2x.jpg);
+  }
 }
+
 @media screen and (min-width: 768px) {
   .hero {
     max-width: 768px;
-    
+    background-image:
+    url(../img/hero/tablet.jpg);
+  }
+  @media screen and (min-resolution: 2dppx) {
+    .hero {
+      background-image:
+      url(../img/hero/tablet2x.jpg);
+    }
   }
 }
     
-
+@media screen and (min-width: 1200px) {
+  .hero {
+    max-width: 1600px;
+    height: 600px;
+    padding: 200px 0px;
+    background-image:
+    url(../img/hero/desktop.jpg);
+  }
+  @media screen and (min-resolution: 2dppx) {
+    .hero {
+      background-image:
+      url(../img/hero/desktop2x.jpg);
+    }
+  }
+}
 
 /*
 .hero {
