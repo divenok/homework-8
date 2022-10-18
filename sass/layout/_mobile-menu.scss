@@ -128,12 +128,8 @@
     transform: rotate(90deg);
     margin-left: 10px;
     margin-right: 10px;
-    
   }
 }
 .current {
   color: var(--accent-color);
-  &::after {
-    opacity: 1;
-  }
 }  
