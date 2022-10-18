@@ -560,13 +560,28 @@ img {
   }
 }
 /* mobile hero*/
+.hero {
+  max-width: 480px;
+  height: 400px;
+  padding: 118px 0px;
+  margin: 0px auto;
+  text-align: center;
+
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
+  url(../img/hero/mobile.jpg);
+  background-size: cover;
+
+  background-color: #c4c4c4;
+}
+
 @media screen and (max-width: 767px) {
   .hero {
-    max-width: 480px;
-    height: 400px;
-    padding: 118px 0px;
-    margin: 0px auto;
-    text-align: center;
+    background-image: url(../img/hero/mobile2x.jpg);
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    max-width: 768px;
   }
 }
 /*
