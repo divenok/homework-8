@@ -566,12 +566,13 @@ img {
   padding: 118px 0px;
   margin: 0px auto;
   text-align: center;
-  background-image: url(../../img/hero/mobile.jpg);
+  background-image: url(../hero/mobile.jpg);
+  background-size: contain;
 }
 
 @media screen and (min-resolution: 2dppx) {
   .hero {
-    background-image: url(../../img/hero/mobile2x.jpg);
+    background-image: url(../img/hero/mobile2x.jpg);
   }
 }
 @media screen and (min-width: 768px) {

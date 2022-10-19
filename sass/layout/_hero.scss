@@ -9,13 +9,14 @@
   text-align: center;
 
   background-image: 
-  url(../../img/hero/mobile.jpg);
+  url(../hero/mobile.jpg);
+  background-size: contain;
 }
 
 @media screen and (min-resolution: 2dppx) {
   .hero {
     background-image:
-    url(../../img/hero/mobile2x.jpg);
+    url(../img/hero/mobile2x.jpg);
   }
 }
 
