@@ -1,15 +1,24 @@
 .main-title {
-    display: block;
+  display: block;
+  width: 360px;
+  margin: 0px auto 30px;
+
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.75;
+
+  text-align: center;
+  letter-spacing: var(--secondary-letter-spacing);
+  text-transform: uppercase;
+
+  color: var(--primary-text-color-theme-dark);
+
+  @media screen and (min-width: 1199px) {
     width: 696px;
-    margin: 0px auto 30px;
-  
-    font-family: var(--primary-font-family);
     
-    font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    letter-spacing: var(--secondary-letter-spacing);
+    
     text-transform: uppercase;
-  
-    color: var(--primary-text-color-theme-dark);
   }
+}
