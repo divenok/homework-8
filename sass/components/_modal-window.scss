@@ -38,11 +38,24 @@
     display: inline-block;
     text-align: center;
     margin: 0 auto 12px;
-   padding: 0;
+    
     width: 370px;
     height: 60px;
   
     font-weight: var(--secondary-font-weight);
     font-size: 20px;
     line-height: 1.5;
+    letter-spacing: var(--primary-letter-spacing);
+
+    color: var(--primary-text-color-theme-light);
+  }
+  @media screen and (min-width: 1200px) {
+    .modal-window {
+      width: 528px;
+      height: 581px;
+    }
+    .modal-window__details {
+      width: 448px;
+      height: 23px;
+    }
   }
