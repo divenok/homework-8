@@ -27,3 +27,8 @@
   .lable__title-description {
     color: var(--primary-text-color-theme-dark);
   }
+  @media screen and (max-width: 1199px) {
+    .work {
+      display: none;
+    }   
+  }
