@@ -3,6 +3,9 @@
     flex-wrap: wrap;
     position: relative;
   }
+  .work-list__img {
+    max-width: 370px;
+  }
   .work-list__item {
     flex-basis: calc((100% - 90px) / 3);
 

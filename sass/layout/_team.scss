@@ -1,4 +1,16 @@
 .team {
+  background-color: var(--tertiary-background-color);
+}
+.team-list {
+  display: block;
+  text-align: center;
+}
+.team-list__img {
+  
+}
+
+/*
+.team {
     font-weight: var(--primary-font-weight);
     font-size: var(--secondary-font-size);
     line-height: 1.19;
@@ -41,6 +53,6 @@
   
     color: var(--secondary-text-color-theme-light);
   }
-  
+  */
   
   
