@@ -2,7 +2,6 @@
   display: block;
 }
 
-
 .features-list__item {
   width: 100%;
   &:not(:last-child) {
@@ -44,7 +43,7 @@
     &:not(:nth-child(2n)) {
       margin-right: 30px;
     }
-    &:not(:nth-last-child(-n+2)) {
+    &:not(:nth-last-child(-n + 2)) {
       margin-bottom: 30px;
     }
     .features__title-description {
