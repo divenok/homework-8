@@ -1,19 +1,16 @@
 .title {
     display: flex;
     justify-content: center;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
   
     font-weight: var(--secondary-font-weight);
-    font-size: 36px;
-    line-height: var(--secondary-line-height);
+    font-size: 28px;
+    line-height: 1.18;
 
-    @media screen and (max-width: 767px)  {
-      margin-bottom: 30px;
+    @media screen and (min-width: 1200px)  {
+      margin-bottom: 50px;
       
-      font-size: 28px;
-      line-height: 1.18;
-      letter-spacing: 0.03em;
-    
-      color: var(--primary-text-color-theme-light);
+      font-size: 36px;
+      line-height: var(--secondary-line-height);
     }
   }
