@@ -6,7 +6,7 @@
   /* 480px + */
   @media screen and (max-width: 767px) {
     .container {
-      width: 480px;
+      max-width: 480px;
     }
   }
   /* 768px + */
