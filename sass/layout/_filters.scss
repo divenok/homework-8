@@ -1,15 +1,6 @@
-@media screen and(max-width: 767px) {
-  .filters__list {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .filters-list__item {
-    flex-basis: calc((100% - (3 * 8px)) / 3);
-  }
-}
 
 
-/*----
+
 .filters__list {
     display: flex;
     justify-content: center;
@@ -62,4 +53,4 @@
   .filters-list__btn-mrcet {
     min-width: 130px;
   }
-  --*/
+  

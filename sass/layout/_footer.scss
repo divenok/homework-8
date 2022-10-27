@@ -235,9 +235,6 @@
   .footer {
     min-width: 1600px;
   }
-  .footer__container {
-    align-items: baseline;
-  }
   .footer__logo {
     margin-bottom: 20px;
   }
@@ -254,7 +251,6 @@
   
     color: var(--primary-text-color-theme-dark);
   }
-  
   .address-list__link {
     font-size: var(--primary-font-size);
     line-height: var(--secondary-line-height);
@@ -266,7 +262,9 @@
     display: block;
     margin-right: auto;
   }
-  
+  .footer__container {
+    align-items: baseline;
+  }
   .footer__associate {
     margin-bottom: 20px;
   
@@ -287,6 +285,7 @@
     display: block;
     align-items: center;
     margin-top: 0;
+    margin-left: 0;
     margin-right: auto;
 
     min-width: 570px;
@@ -300,7 +299,6 @@
   
     color: var(--primary-text-color-theme-dark);
   }
-  
   .footer__contact-form-field {
     font-weight: var(--secondary-font-weight);
       
@@ -340,9 +338,6 @@
       color: rgba(255, 255, 255, 0.6);
     }
   }
-  
-  
-  
   .submit-btn-subscription {
     display: flex;
     justify-content: center;
