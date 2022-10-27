@@ -1,6 +1,30 @@
+@media screen and(max-width: 767px) {
+  .filters-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 124px;
+  }
+  .filters-list__item:nth-child(1), :nth-child(2), :nth-child(4) {
+    margin-right: 8px;
+  }
+  .filters-list__item:not(:nth-last-child(-n+2)) {
+    margin-bottom: 15px;
+  }
+  .filters-list__btn-all {
+    min-width: 73px;
+  }
+  .filters-list__btn-web {
+    min-width: 125px;
+  }
+  .filters-list__btn-add {
+    min-width: 112px;
+  }
+  .filters-list__btn-diz {
+    min-width: 103px;
+  }
+}
 
-
-
+/*
 .filters__list {
     display: flex;
     justify-content: center;
@@ -53,4 +77,5 @@
   .filters-list__btn-mrcet {
     min-width: 130px;
   }
+  */
   
