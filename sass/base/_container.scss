@@ -1,23 +1,26 @@
 
   .container {
-    margin: 0px auto;
-    padding: 0px 15px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
-  /* 480px + */
-  @media screen and (max-width: 767px) {
+  
+  @media screen and (min-width: 480px) {
     .container {
-      max-width: 480px;
+      max-width: 450px;
+      margin-left: auto;
+      margin-right: auto;
     }
   }
-  /* 768px + */
+  
+  /* 768px + 
   @media screen and (min-width: 768px) {
     .container {
       width: 768px;
     }
-  }
-  /* 1200px + */
+  }*/
+  /* 1200px + 
   @media screen and (min-width: 1200px) {
     .container {
       width: 1200px;
     }
-  } 
+  } */
