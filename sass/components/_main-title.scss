@@ -13,12 +13,11 @@
 
   color: var(--primary-text-color-theme-dark);
 
-  @media screen and (min-width: 1199px) {
+  @media screen and (min-width: 1200px) {
     width: 696px;
     
     font-size: 44px;
     line-height: 1.36;
     
-    text-transform: uppercase;
   }
 }

@@ -1,43 +1,36 @@
 
 .header {
-  border-bottom: 1px solid #eeeeee;
- 
-}
-.header__container {
-  display: flex;
-  justify-content: space-between;
+  position: relative;
+  border-bottom: 1px solid #ECECEC;
   padding-top: 10px;
   padding-bottom: 10px;
 }
-.navigation {
-  display: flex;
-  align-items: center;
-}
-
-
-
   .nav-list {
     display: none;
   }
   .contacts-list {
     display: none;
   }
-  .header {
-    position: relative;
+  .header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
-  
   .mobile-menu-btn {
-    background-color: transparent;
-    border: none;
-    padding: 0;
-    line-height: 0;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  line-height: 0;
+  }
+  .modal-menu-btn__icon {
     fill: var(--primary-text-color-theme-light);
   }
-  
-
-/* tablet 
 
 @media screen and (min-width: 768px) {
+  .header {
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
   .mobile-menu-btn {
     display: none;
   }
@@ -45,15 +38,20 @@
     display: none;
   }
   .header__container {
-    padding-top: 21px;
-    padding-bottom: 21px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-  .header__logo {
-    margin-right: 87px;
+  .navigation {
+    display: flex;
+    align-items: center;
   }
   .nav-list {
     display: flex;
     align-items: center;
+  }
+  .header__logo {
+    margin-right: 87px;
   }
   .nav-list__item:not(:last-child) {
     margin-right: 50px;
@@ -66,8 +64,7 @@
     letter-spacing: 0.02em;
   
     color: var(--primary-text-color-theme-light);
-    
-
+  
     &::after {
       content: "";
       display: block;
@@ -101,7 +98,10 @@
       opacity: 1;
     }
   }
+
+  
   .contacts-list {
+    display: block;
     margin-left: auto;
   }
   .contacts-list__link {
@@ -112,6 +112,16 @@
     line-height: 1.17;
     letter-spacing: 0.02em;
     color: var(--secondary-text-color-theme-light);
+
+    &:hover, &:focus {
+      color: var(--accent-color);
+      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+      .envelope, .smartphone {
+        fill: var(--accent-color);
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      }
+    }
   }
   .contacts-list__item-mail {
     margin-bottom: 10px;
@@ -120,30 +130,25 @@
     min-width: 14px;
     height: 10px;
     margin-right: 8px;
-    
+      
     fill: var(--secondary-text-color-theme-light);
   }
   .smartphone {
     min-width: 10px;
     height: 14px;
     margin-right: 8px;
-
+  
     fill: var(--secondary-text-color-theme-light);
   }
 }
 
-/* Dasktop  
-
-@media  screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .header {
-    width: 1600px;
+    padding-top: 24px;
+    padding-bottom: 25px;
   }
   .header__logo {
     margin-right: 93px;
-  }
-  .header__container {
-    padding-top: 24px;
-    padding-bottom: 25px;
   }
   .contacts-list {
     display: flex;
@@ -151,26 +156,8 @@
     margin-left: auto;
   }
   .contacts-list__link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    font-weight: var(--primary-font-weight);
     font-size: var(--primary-font-size);
     line-height: var(--primary-line-height);
-    letter-spacing: 0.02em;
-    color: var(--secondary-text-color-theme-light);
-    
-
-    &:hover, &:focus {
-      color: var(--accent-color);
-      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
-  }
-  .contacts-list__item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
   .contacts-list__item-mail {
     margin-bottom: 0;
@@ -179,24 +166,13 @@
   .envelope {
     margin-right: 10px;
     min-width: 16px;
-    fill: var(--secondary-text-color-theme-light);
-
-    .contacts-list__link:hover &, .contacts-list__link:focus & {
-      fill: var(--accent-color);
-      transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
+    min-height: 12px;
   }
   .smartphone {
     margin-right: 10px;
     min-width: 10px;
-    fill: var(--secondary-text-color-theme-light);
-
-    .contacts-list__link:hover &, .contacts-list__link:focus & {
-      fill: var(--accent-color);
-      transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
+    min-height: 16px;
   }
 }
-*/
-  
+
   
