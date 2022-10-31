@@ -151,7 +151,7 @@ img {
 
 .main-title {
   display: block;
-  width: 360px;
+  max-width: 360px;
   margin: 0px auto 30px;
   font-weight: 900;
   font-size: 26px;
@@ -163,7 +163,7 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .main-title {
-    width: 696px;
+    max-width: 696px;
     font-size: 44px;
     line-height: 1.36;
   }
@@ -574,8 +574,8 @@ img {
   }
 }
 .hero {
-  width: 100vw;
-  height: 400px;
+  width: 100%;
+  height: auto;
   padding: 118px 0px;
   margin: 0px auto;
   text-align: center;
@@ -586,7 +586,7 @@ img {
 
 @media (min-devise-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero/mobile2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero/mobile@2x.jpg);
   }
 }
 .hero__modal-btn {
@@ -604,19 +604,18 @@ img {
 }
 @media screen and (min-width: 768px) and (min-devise-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero/tablet2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero/tablet@2x.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
   .hero {
-    height: 600px;
     padding: 200px 0px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero/desktop.jpg);
   }
 }
 @media screen and (min-width: 1200px) and (min-devise-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero/desktop2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero/desktop@2x.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -624,37 +623,29 @@ img {
     padding: 9px 31px;
   }
 }
-@media screen and (max-width: 767px) {
-  .features-list {
-    display: block;
-  }
-  .features-list__item {
-    width: 100%;
-  }
-  .features-list__item:not(:last-child) {
-    margin-bottom: 30px;
-  }
-  .features__button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 120px;
-    margin-bottom: 30px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: var(--tertiary-background-color);
-    border-radius: 4px;
-  }
-  .features__title-description {
-    margin-bottom: 10px;
-    text-align: center;
-  }
-  .features__description {
-    line-height: var(--secondary-line-height);
-    color: var(--secondary-text-color-theme-light);
-  }
-}
 /* tablet  */
+.features__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+  margin-bottom: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--tertiary-background-color);
+  border-radius: 4px;
+}
+
+.features__title-description {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.features__description {
+  line-height: var(--secondary-line-height);
+  color: var(--secondary-text-color-theme-light);
+}
+
 @media screen and (min-width: 768px) {
   .features-list {
     display: flex;
@@ -681,6 +672,9 @@ img {
   .features-list__item {
     width: 270px;
   }
+  .features-list__item:not(:nth-last-child(-n+2)) {
+    margin-bottom: 30px;
+  }
   .features-list__item:not(:nth-child(4n)) {
     margin-right: 30px;
   }
@@ -697,6 +691,33 @@ img {
   }
   .features__title-description {
     margin-bottom: 10px;
+  }
+  .features__description {
+    line-height: var(--secondary-line-height);
+    color: var(--secondary-text-color-theme-light);
+  }
+}
+@media screen and (max-width: 767px) {
+  .features-list {
+    display: block;
+  }
+  .features-list__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+  .features__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    margin-bottom: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--tertiary-background-color);
+    border-radius: 4px;
+  }
+  .features__title-description {
+    margin-bottom: 10px;
+    text-align: center;
   }
   .features__description {
     line-height: var(--secondary-line-height);

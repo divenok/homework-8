@@ -1,6 +1,6 @@
 .hero {
-  width: 100vw;
-  height: 400px;
+  width: 100%;
+  height: auto;
   padding: 118px 0px;
   margin: 0px auto;
   text-align: center;
@@ -12,7 +12,7 @@
 @media (min-devise-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../img/hero/mobile2x.jpg);
+    url(../img/hero/mobile@2x.jpg);
   }
 }
 
@@ -33,14 +33,14 @@
   @media screen and (min-devise-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .hero {
       background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
-      url(../img/hero/tablet2x.jpg);
+      url(../img/hero/tablet@2x.jpg);
     }
   }
 }
     
 @media screen and (min-width: 1200px) {
   .hero {
-    height: 600px;
+    
     padding: 200px 0px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
     url(../img/hero/desktop.jpg);
@@ -48,7 +48,7 @@
   @media screen and (min-devise-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .hero {
       background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
-      url(../img/hero/desktop2x.jpg);
+      url(../img/hero/desktop@2x.jpg);
     }
   }  
   .hero__modal-btn { 
