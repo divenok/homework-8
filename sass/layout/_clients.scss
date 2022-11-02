@@ -2,20 +2,14 @@
 .clients-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
 }
 .clients-list__link {
   display: flex;
   align-items: center;
   justify-content: center;
-
-  width: 210px;
   height: 92px;
-}
-
-.clients-list__item {
-  box-sizing: border-box;
-  text-align: center;
-  
 
   border: 1px solid #afb1b8;
   border-radius: 4px;
@@ -25,6 +19,13 @@
   &:focus {
   border-color: var(--accent-color);
   }
+}
+
+.clients-list__item {
+  box-sizing: border-box;
+  text-align: center;
+
+  
 }
 
 .clients-list__icon {
@@ -39,7 +40,7 @@
 @media screen and (max-width: 767px) {
   .clients-list__item {
     flex-basis: calc((100% - (2 * 30px)) / 2);
-    min-width: 210px;
+    max-width: 210px;
 
     &:not(:nth-child(2n)) {
       margin-right: 30px;
@@ -47,17 +48,19 @@
     &:not(:nth-last-child(-n + 2)) {
       margin-bottom: 30px;
     }
-  }  
+  } 
+  .clients-list__link {
+    flex-basis: 210px;
+  } 
 }
 
-@media screen and (min-width: 768px)  {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .clients-list__link {
   width: 226px;
-  height: 92px;
   }
   .clients-list__item {
     flex-basis: calc((100% - (3 * 30px)) / 3);
-    min-width: 210px;
+    width: 210px;
 
     &:not(:nth-child(3n)) {
       margin-right: 30px;
@@ -66,42 +69,21 @@
       margin-bottom: 30px;
     }
   }  
-
 }
 
 @media screen and (min-width: 1200px)  {
   .clients-list__link {
   width: 170px;
-  height: 92px;
   }
-
   .clients-list__item {
-    box-sizing: border-box;
-    text-align: center;
     flex-basis: calc((100% - (6 * 30px)) / 6);
-    min-width: 170px;
-  
-    border: 1px solid #afb1b8;
-    border-radius: 4px;
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    width: 170px;
+    
     &:not(:nth-child(6n)) {
       margin-right: 30px;
     }
     &:not(:nth-last-child(-n + 6)) {
       margin-bottom: 30px;
-    }
-    &:hover,
-    &:focus {
-    border-color: var(--accent-color);
-    }
-  }
-  
-  .clients-list__icon {
-    fill: #afb1b8;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    .clients-list__link:hover &,
-    .clients-list__link:focus & {
-    fill: var(--accent-color);
     }
   }
 }

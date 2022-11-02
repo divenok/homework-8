@@ -1,41 +1,44 @@
 body {
-    font-family: var(--primary-font-family);
-    font-size: var(--primary-font-size);
-    line-height: var(--primary-line-height);
-    letter-spacing: var(--primary-letter-spacing);
-    color: var(--primary-text-color-theme-light);
-    background-color: var(--primary-background-color);
-  }
+  font-family: var(--primary-font-family);
+  font-size: var(--primary-font-size);
+  line-height: var(--primary-line-height);
+  letter-spacing: var(--primary-letter-spacing);
+  color: var(--primary-text-color-theme-light);
+  background-color: var(--primary-background-color);
+}
   
-  h1,
-  h2,
-  h3,
-  p {
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-  ul,
-  ol {
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-left: 0;
-  }
-  img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-  }
-  .address {
-    font-style: normal;
-  }
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.address {
+  font-style: normal;
+}
   
-  .list {
-    list-style: none;
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+}
+.section {
+  padding: 60px 0;
+  @media screen and (min-width: 1200px) {
+    padding: 94px 0;
   }
-  .link {
-    text-decoration: none;
-  }
-  .section {
-    padding: 60px 0;
-    
-  }
+}
+  

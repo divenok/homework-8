@@ -261,7 +261,7 @@
   }
   .footer__wrapper {
     display: block;
-    margin-right: auto;
+    margin-right: 0;
   }
   .footer__container {
     align-items: baseline;
@@ -275,6 +275,9 @@
   
     color: var(--primary-text-color-theme-dark);
   }
+  .wrapper-associate {
+    margin-left: 70px;
+  }
   .social-list__item-associate {
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.1);
@@ -286,8 +289,8 @@
     display: block;
     align-items: center;
     margin-top: 0;
-    margin-left: 0;
-    margin-right: auto;
+    margin-left: 93px;
+    margin-right: 0;
 
     min-width: 570px;
     min-height: 86px;
