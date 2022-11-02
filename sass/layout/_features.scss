@@ -1,5 +1,4 @@
 
-/* tablet  */
 .features__button {
   display: flex;
   align-items: center;
@@ -19,13 +18,29 @@
   line-height: var(--secondary-line-height);
   color: var(--secondary-text-color-theme-light);
 }
-@media screen and (min-width: 768px) {
+
+@media screen and(max-width: 767px) {
+  
+  .features-list {
+    display: block;
+  }
+  .features-list__item {
+    
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .features-list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    width: 738px;
   }
   .features-list__item {
-    width: 354px;
+    flex-basis: calc((100% - 60px) / 2 );
 
     &:not(:nth-child(2n)) {
       margin-right: 30px;
@@ -44,72 +59,25 @@
     padding-top: 94px;
     padding-bottom: 0;
   }
-  
+  .features-list {
+    display: flex;
+    justify-content: center;
+    width: 1170px;
+  }
   .features-list__item {
+    flex-basis: calc((100% - 120px) / 4);
     
-    width: 270px;
-    &:not(:nth-last-child(-n + 2)) {
-      margin-bottom: 30px;
-    }
+    margin-bottom: 0;
 
     &:not(:nth-child(4n)) {
       margin-right: 30px;
     }
-    
-  }
-  
-  .features__button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 120px;
-    margin-bottom: 30px;
-  
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: var(--tertiary-background-color);
-    border-radius: 4px;
   }
   
   .features__title-description {
-    margin-bottom: 10px;
-  }
-  
-  .features__description {
-    line-height: var(--secondary-line-height);
-  
-    color: var(--secondary-text-color-theme-light);
+    text-align: start;
   }
 }
+  
 
-@media screen and(max-width: 767px) {
-  
-  .features-list {
-    display: block;
-  }
-  .features-list__item {
-    
-    &:not(:last-child) {
-      margin-bottom: 30px;
-    }
-  }
-  .features__button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 120px;
-    margin-bottom: 30px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: var(--tertiary-background-color);
-    border-radius: 4px;
-  }
-  .features__title-description {
-    margin-bottom: 10px;
-    text-align: center;
-  }
-  .features__description {
-    line-height: var(--secondary-line-height);
-    color: var(--secondary-text-color-theme-light);
-  }
-}
+
