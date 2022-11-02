@@ -58,7 +58,7 @@
   .team-list__item {
     width: 354px;
     
-    flex-basis: calc((100% - 60px) / 2);
+    flex-basis: calc((100% - 30px) / 2);
   
     &:not(:nth-child(2n)) {
       margin-right: 30px;
@@ -80,7 +80,7 @@
     margin-bottom: 0;
     width: 270px;
     
-    flex-basis: calc((100% - (4 * 30px)) / 4);
+    flex-basis: calc((100% - (3 * 30px)) / 4);
   
     &:not(:nth-child(4n)) {
       margin-right: 30px;

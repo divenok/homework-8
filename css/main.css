@@ -52,7 +52,7 @@
 /*-- 1200px + --*/
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1170px;
+    width: 1200px;
   }
 }
 body {
@@ -666,7 +666,7 @@ img {
     width: 738px;
   }
   .features-list__item {
-    flex-basis: calc((100% - 60px) / 2);
+    flex-basis: calc((100% - 30px) / 2);
   }
   .features-list__item:not(:nth-child(2n)) {
     margin-right: 30px;
@@ -689,7 +689,7 @@ img {
     width: 1170px;
   }
   .features-list__item {
-    flex-basis: calc((100% - 120px) / 4);
+    flex-basis: calc((100% - 90px) / 4);
     margin-bottom: 0;
   }
   .features-list__item:not(:nth-child(4n)) {
@@ -710,7 +710,7 @@ img {
 }
 
 .work-list__item {
-  flex-basis: calc((100% - 90px) / 3);
+  flex-basis: calc((100% - 60px) / 3);
 }
 .work-list__item:not(:nth-child(3n)) {
   margin-right: 30px;
@@ -793,7 +793,7 @@ img {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .team-list__item {
     width: 354px;
-    flex-basis: calc((100% - 60px) / 2);
+    flex-basis: calc((100% - 30px) / 2);
   }
   .team-list__item:not(:nth-child(2n)) {
     margin-right: 30px;
@@ -811,7 +811,7 @@ img {
   .team-list__item {
     margin-bottom: 0;
     width: 270px;
-    flex-basis: calc((100% - 120px) / 4);
+    flex-basis: calc((100% - 90px) / 4);
   }
   .team-list__item:not(:nth-child(4n)) {
     margin-right: 30px;
@@ -859,9 +859,11 @@ img {
 }
 
 @media screen and (max-width: 767px) {
-  .clients-list__item {
-    flex-basis: calc((100% - 60px) / 2);
+  .clients-list__link {
     max-width: 210px;
+  }
+  .clients-list__item {
+    flex-basis: calc((100% - 30px) / 2);
   }
   .clients-list__item:not(:nth-child(2n)) {
     margin-right: 30px;
@@ -878,7 +880,7 @@ img {
     width: 226px;
   }
   .clients-list__item {
-    flex-basis: calc((100% - 90px) / 3);
+    flex-basis: calc((100% - 60px) / 3);
     width: 210px;
   }
   .clients-list__item:not(:nth-child(3n)) {
@@ -893,7 +895,7 @@ img {
     width: 170px;
   }
   .clients-list__item {
-    flex-basis: calc((100% - 180px) / 6);
+    flex-basis: calc((100% - 150px) / 6);
     width: 170px;
   }
   .clients-list__item:not(:nth-child(6n)) {
@@ -1102,9 +1104,6 @@ img {
   }
 }
 @media screen and (min-width: 1200px) {
-  .footer {
-    min-width: 1600px;
-  }
   .footer__logo {
     margin-bottom: 20px;
   }

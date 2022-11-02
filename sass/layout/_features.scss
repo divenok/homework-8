@@ -40,7 +40,7 @@
     width: 738px;
   }
   .features-list__item {
-    flex-basis: calc((100% - 60px) / 2 );
+    flex-basis: calc((100% - 30px) / 2 );
 
     &:not(:nth-child(2n)) {
       margin-right: 30px;
@@ -65,7 +65,7 @@
     width: 1170px;
   }
   .features-list__item {
-    flex-basis: calc((100% - 120px) / 4);
+    flex-basis: calc((100% - 90px) / 4);
     
     margin-bottom: 0;
 

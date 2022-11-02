@@ -7,7 +7,7 @@
     max-width: 370px;
   }
   .work-list__item {
-    flex-basis: calc((100% - 90px) / 3);
+    flex-basis: calc((100% - 60px) / 3);
 
     &:not(:nth-child(3n)) {
       margin-right: 30px;
