@@ -17,7 +17,7 @@
   }
   }
   .projects-list__item-description {
-    width: 322px;
+    width: 402px;
   
     font-weight: 400;
     font-size: 18px;
@@ -25,4 +25,14 @@
   
     color: rgba(255, 255, 255, 1);
   }
-  
+@media screen and (min-width: 768px) {
+  .projects-list__item-description {
+    width: 306px;
+  }
+} 
+
+@media screen and (min-width: 1200px) {
+  .projects-list__item-description {
+    width: 322px;
+  }
+}
