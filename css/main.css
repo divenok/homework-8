@@ -1410,7 +1410,60 @@ img {
   color: var(--secondary-text-color-theme-light);
 }
 
-/*--
+.filters-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.filters-list__item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.filters-list__btn {
+  display: inline-block;
+  min-height: 38px;
+  text-align: center;
+  margin: 0;
+  font-family: var(--primary-font-family);
+  font-style: normal;
+  font-weight: var(--primary-font-weight);
+  font-size: var(--secondary-font-size);
+  line-height: 1.63;
+  letter-spacing: var(--primary-letter-spacing);
+  cursor: pointer;
+  border: 1px solid #eeeeee;
+  border-radius: 4px;
+  color: var(--primary-text-color-theme-light);
+  background: var(--tertiary-background-color);
+}
+.filters-list__btn:hover, .filters-list__btn:focus {
+  color: var(--primary-text-color-theme-dark);
+  background: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.filters-list__btn-all {
+  min-width: 73px;
+}
+
+.filters-list__-btn-web {
+  min-width: 125px;
+}
+
+.filters-list__btn-add {
+  min-width: 112px;
+}
+
+.filters-list__btn-diz {
+  min-width: 103px;
+}
+
+.filters-list__btn-mrcet {
+  min-width: 130px;
+}
+
+/*
 
 @media screen and (max-width: 767px) {
   .filters-list {
@@ -1437,58 +1490,4 @@ img {
     min-width: 103px;
   }
 }
-
-/*
-.filters__list {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
-  }
-  .filters-list__item:not(:last-child) {
-    margin-right: 8px;
-  }
-  .filters-list__btn {
-    display: inline-block;
-    min-height: 38px;
-    text-align: center;
-
-    margin: 0;
-
-    font-family: var(--primary-font-family);
-    font-style: normal;
-    font-weight: var(--primary-font-weight);
-    font-size: var(--secondary-font-size);
-    line-height: 1.63;
-    letter-spacing: var(--primary-letter-spacing);
-    cursor: pointer;
-
-    border: 1px solid #eeeeee;
-    border-radius: 4px;
-    color: var(--primary-text-color-theme-light);
-    background: var(--tertiary-background-color);
-
-    &:hover,
-    &:focus {
-    color: var(--primary-text-color-theme-dark);
-    background: var(--accent-color);
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-      0px 2px 2px rgba(0, 0, 0, 0.12);
-  }
-  }
-
-  .filters-list__btn-all {
-    min-width: 73px;
-  }
-  .filters-list__-btn-web {
-    min-width: 125px;
-  }
-  .filters-list__btn-add {
-    min-width: 112px;
-  }
-  .filters-list__btn-diz {
-    min-width: 103px;
-  }
-  .filters-list__btn-mrcet {
-    min-width: 130px;
-  }
-  *//*# sourceMappingURL=main.css.map */
+*//*# sourceMappingURL=main.css.map */
